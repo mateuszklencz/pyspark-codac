@@ -1,0 +1,34 @@
+name: codac assignment 
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+    - name: Set up Python 3.7
+      uses: actions/setup-python@v3
+      with:
+        python-version: "3.7"
+    - name: Install dependencies
+      run: |
+        python3 pip install --upgrade pip
+        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+    - name: Testing with Pytest and Chispa
+      run: |
+        pytest
+    - name: Create wheel file
+      run: |
+        python3 setup.py bdist_wheel
+    - name: Commit and push wheel
+      run: |
+        git add -f ./dist/*.whl
+        git commit -m 'wheel added to repo'
+        git push
+    - run: echo "Stream was executed"
