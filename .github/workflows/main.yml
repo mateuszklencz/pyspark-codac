@@ -28,6 +28,8 @@ jobs:
         python3 setup.py bdist_wheel
     - name: Commit and push wheel
       run: |
+        git config --global user.email "mateusz.klencz@capgemini.com"
+        git config --global user.name "mateuszklencz"
         git add -f ./dist/*.whl
         git commit -m 'wheel added to repo'
         git push
