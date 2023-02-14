@@ -1,3 +1,21 @@
 2023-02-14 07:45:37.822774: merging data
 2023-02-14 07:45:37.844827: saving output
 2023-02-14 07:45:38.499288: Success! All tasks are completed
+2023-02-14 09:24:26.533478: starting app
+2023-02-14 09:24:26.535655: parsing parameters
+2023-02-14 09:24:26.536410: running pyspark
+2023-02-14 09:24:30.531039: loading data
+2023-02-14 09:24:34.138102: filtering data
+2023-02-14 09:24:34.172760: renaming column
+2023-02-14 09:24:34.192656: merging data
+2023-02-14 09:24:34.215102: saving output
+2023-02-14 09:24:35.208699: Success! All tasks are completed
+2023-02-14 09:25:14.205693: starting app
+2023-02-14 09:25:14.206715: parsing parameters
+2023-02-14 09:25:14.207004: running pyspark
+2023-02-14 09:25:17.711260: loading data
+2023-02-14 09:25:21.173798: filtering data
+2023-02-14 09:25:21.216028: renaming column
+2023-02-14 09:25:21.239784: merging data
+2023-02-14 09:25:21.269326: saving output
+2023-02-14 09:25:22.239992: Success! All tasks are completed
