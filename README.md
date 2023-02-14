@@ -1,11 +1,11 @@
 # General Overview <a name="overview"></a>
 
-Codac PySpark assignment done by **Mateusz Klencz** . Python script does the tasks which test: 
+Codac PySpark assignment done by **Mateusz Klencz** . This task tests the following skills:
 
 * joining, filtering, renaming columns and saving of pyspark dataframes 
 * writing tests (chispa)
 * encapsulation of data using class and generic functions 
-* CI with GitHub Actions
+* CI/CD with GitHub Actions
 
 
 ## Tables of Contents
