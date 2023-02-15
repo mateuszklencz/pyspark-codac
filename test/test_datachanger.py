@@ -3,7 +3,6 @@ import pytest
 import pyspark 
 from pyspark.sql import SparkSession
 from chispa import assert_df_equality
-sys.path.append('../')
 from code.datachanger import DataChanger
 
 
