@@ -68,7 +68,7 @@ class OutputBuilder():
 
     def loadDataSets(self, file_path1: str, file_path2: str):
         '''
-        Method takes path to the first and second data files on which the transformation is to be made
+        Method takes paths to the first and second data files on which the transformation is to be made
 
         :file_path1: string file path to dataset with personal data
         :file_path2: string file path to dataset with financial data
@@ -103,6 +103,10 @@ class OutputBuilder():
         return self
 
     def loadDataFrames(self):
+    	'''
+    	Loads data from self.dataset1 and self.dataset2 to pyspark, changing them
+    	into pyspark DatFrame (from .csv)
+    	'''
         self.logReq('loading dataframes')
 
         self.df1 = self.spark.read.csv(self.dataset1, header=True, inferSchema=True)
@@ -131,8 +135,8 @@ class OutputBuilder():
         '''
         Use DataChanger class from datachanger and renames columns in self.df1 and self.df2
 
-        :dict_for_df1: dictionary in format "old value":"new value" for changing names of self.df1
-        :dict_for_df2: dictionary in format "old value":"new value" for changing names of self.df2
+        :dict_for_df1: dictionary in format "old value":"new value" for changing names of columns of self.df1
+        :dict_for_df2: dictionary in format "old value":"new value" for changing names of columns of self.df2
         '''
         self.logReq('renaming columns')
 
@@ -143,7 +147,7 @@ class OutputBuilder():
 
     def mergeDataFrames(self, column_id: str):
         '''
-        Merges a self.df1 and self.df2 as left join based on column with header provided as param
+        Merges a self.df1 and self.df2 as left join, based on column with name provided as param
 
         :columnd_id: column name as string on which data will be joined
         '''
