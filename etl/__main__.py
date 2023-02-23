@@ -103,10 +103,10 @@ class OutputBuilder():
         return self
 
     def loadDataFrames(self):
-    	'''
-    	Loads data from self.dataset1 and self.dataset2 to pyspark, changing them
-    	into pyspark DatFrame (from .csv)
-    	'''
+        '''
+        Loads data from self.dataset1 and self.dataset2 to pyspark, changing them
+        into pyspark DatFrame (from .csv)
+        '''
         self.logReq('loading dataframes')
 
         self.df1 = self.spark.read.csv(self.dataset1, header=True, inferSchema=True)

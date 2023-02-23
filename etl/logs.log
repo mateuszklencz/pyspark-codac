@@ -1,17 +1,14 @@
-2023-02-15 15:12:27.878077: loading datasets filepaths
-2023-02-15 15:12:27.884844: starting spark
-2023-02-15 15:12:31.524776: loading dataframes
-2023-02-15 15:12:35.325626: filtering by country
-2023-02-15 15:12:35.343588: deleting unused columns
-2023-02-15 15:12:35.359959: renaming columns
-2023-02-15 15:12:35.374750: merging dataframes
-2023-02-15 15:12:35.395281: saving output
-2023-02-15 16:01:06.555768: log started
-2023-02-15 16:01:06.556172: loading datasets filepaths
-2023-02-15 16:01:06.556379: starting spark
-2023-02-15 16:01:10.252312: loading dataframes
-2023-02-15 16:01:13.749187: filtering by country
-2023-02-15 16:01:13.768489: deleting unused columns
-2023-02-15 16:01:13.786941: renaming columns
-2023-02-15 16:01:13.805512: merging dataframes
-2023-02-15 16:01:13.832512: saving output
+2023-02-23 12:06:54.845507: filtering by country
+2023-02-23 12:06:54.875781: deleting unused columns
+2023-02-23 12:06:54.893132: renaming columns
+2023-02-23 12:06:54.911023: merging dataframes
+2023-02-23 12:06:54.932251: saving output
+2023-02-23 12:08:12.290974: log started
+2023-02-23 12:08:12.291302: loading datasets filepaths
+2023-02-23 12:08:12.291546: starting spark
+2023-02-23 12:08:15.714137: loading dataframes
+2023-02-23 12:08:19.062180: filtering by country
+2023-02-23 12:08:19.082106: deleting unused columns
+2023-02-23 12:08:19.099591: renaming columns
+2023-02-23 12:08:19.117297: merging dataframes
+2023-02-23 12:08:19.137886: saving output
