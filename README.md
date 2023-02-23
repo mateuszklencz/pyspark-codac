@@ -1,4 +1,4 @@
-# General Overview <a name="overview"></a>
+# General Overview
 
 Codac PySpark assignment done by **Mateusz Klencz** . This task tests the following skills:
 
@@ -12,16 +12,17 @@ Codac PySpark assignment done by **Mateusz Klencz** . This task tests the follow
 
 - [General Overview](#general-overview)
 - [Task Description](#task-description)
-  * [Background:](#background-)
-  * [Things to be aware:](#things-to-be-aware-)
+  * [Background](#background)
+  * [Things to be aware:](#things-to-be-aware)
 - [Data](#data)
   * [dataset 1 - personal data](#dataset-1---personal-data)
   * [dataset 2 - financial data](#dataset-2---financial-data)
+- [Example of Use](#example-of-use)
 
 
-# Task Description <a name="task_desc"></a>
+# Task Description
 
-## Background:
+## Background
 A very small company called **KommatiPara** that deals with bitcoin trading has two separate datasets dealing with clients that they want to collate to starting interfacing more with their clients. One dataset contains information about the clients and the other one contains information about their financial details.
 
 The company now needs a dataset containing the emails of the clients from the United Kingdom and the Netherlands and some of their financial details to starting reaching out to them for a new marketing push.
@@ -29,7 +30,7 @@ The company now needs a dataset containing the emails of the clients from the Un
 Since all the data in the datasets is fake and this is just an exercise, one can forego the issue of having the data stored along with the code in a code repository.
 
 
-## Things to be aware:
+## Things to be aware
 
 - Use Python **3.7**
 - Avoid using notebooks, like **Jupyter** for instance. While these are good for interactive work and/or prototyping in this case they shouldn't be used.
@@ -59,7 +60,7 @@ Recommendation: Use the following package for Spark tests - https://github.com/M
 - **Bonus** - Document the code with docstrings as much as possible using the reStructuredText (reST) format.
 
 
-# Data <a name="data"></a>
+# Data
 
 All data are provided in *.csv* files
 
