@@ -89,7 +89,7 @@ In this project exists a main directory with code called **etl**. Inside this fo
 - \__main__.py
 - datachanger.py
 
-In datachanger is a class with static methods which conduct some data transformations. But the file which should be ran and have "if \__name__ == \__main__" clause is __main__.py
+In datachanger is a class with static methods which conduct some data transformations. But the file which should be run and have "if \__name__ == \__main__" clause is __main__.py
 
 This script takes 3 parameters, the first two of which are positional, required and specify the location of the data set. The third argument is a list of countries on the basis of which filtering is to take place. 
 
@@ -101,10 +101,10 @@ python3 path/__main__.py dataset1 dataset2 -c country
 ```
 So, it can looks like that: 
 ```console
-python3 __main__.py ../data/dataset_one.csv ../data/dataset_two.csv France 
+python3 __main__.py ../data/dataset_one.csv ../data/dataset_two.csv -c France 
 ```
 
 But if it is needed to provide more countries space should be used as separator 
 ```console
-python3 __main__.py ../data/dataset_one.csv ../data/dataset_two.csv Netherlands 'United Kingdom' 
+python3 __main__.py ../data/dataset_one.csv ../data/dataset_two.csv -c Netherlands 'United Kingdom' 
 ```
